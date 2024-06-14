@@ -25,6 +25,74 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <style>
+      #root {
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+        font-family: "SegoeUI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .container {
+        margin-top: 2rem;
+        padding: 2rem 3rem;
+        box-shadow: 8px 8px 0px #2b5c3ec5;
+        border: 2px solid #206d4f;
+      }
+
+      input[type="text"] {
+        width: 350px;
+        font-size: 1rem;
+        padding: 8px;
+        outline: 0;
+        border: 1px solid #009c60;
+        border-radius: 3px 3px;
+      }
+
+      input[type="text"]:focus {
+        border-color: #09a628;
+        box-shadow: 003px 4px rgb(0124156/16%);
+      }
+
+      .todo {
+        background-color: #206d4f;
+        padding: 0.3rem 0.5rem 0.4rem;
+        border-radius: 3px 3px;
+        margin-bottom: 15px;
+        color: white;
+        position: relative;
+      }
+
+      .todo span {
+        background-color: #25abff;
+        color: #ffffff;
+        position: absolute;
+        margin: 7px;
+        right: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        font-size: 16px;
+        cursor: pointer;
+        /* border-top-right-radius:3px 3px; */
+        line-height: 16px;
+      }
+
+      .todospan:hover {
+        color: silver;
+      }
+
+      small {
+        display: block;
+        color: red;
+      }
+
+      smalll {
+        display: block;
+        color: green;
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
